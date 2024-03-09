@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .items{
+            display: grid;
+            grid-template-areas: 
+            'a a b'
+            'c d b';
+            row-gap: 2%;
+            column-gap: 2%;
+            border: 5px solid black;
+            padding: 2%;
+            height: 85%;
+            
+        }
+        .box{
+            border-radius: 2%;
+            background-color: peachpuff;
+        
+        }
+        .a{
+            grid-area: a;
+        }
+        .b{
+            grid-area: b;
+        }
+        .c{
+            grid-area: c;
+        }
+        .d{
+            grid-area: d;
+        }
+        p{
+            font-size:xx-large;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="items">
+       <div class="a box"><p>A</p></div>
+       <div class="b box"><p>B</p></div>
+       <div class="c box"><p>C</p></div>
+       <div class="d box"><p>D</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            border: 2px solid black;
+            padding: 2%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,250px);
+            column-gap: 1%;
+            row-gap: 2%;
+         }
+         .img1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+         }
+         .img3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row:2/4 ;
+         }
+         .img4{
+            grid-column: 2/3;
+            grid-row: 2/3;
+         }
+         .img5{
+            grid-column: 2/3;
+            grid-row: 3/4;
+         }
+         .img6{
+            grid-column: 3/4;
+            grid-row: 2/4;
+         }
+         img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+         }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="img1"><img src="./other_images/image1.png" alt=""></div>
+    <div class="img2"><img src="./other_images/image2.png" alt=""></div>
+    <div class="img3"><img src="./other_images/image3.jpeg" alt=""></div>
+    <div class="img4"><img src="./other_images/image4.jpeg" alt=""></div>
+    <div class="img5"><img src="./other_images/image5.jpeg" alt=""></div>
+    <div class="img6"><img src="./other_images/image6.jpg" alt=""></div>
+</div>
+</body>
+</html>

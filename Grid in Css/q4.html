@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .items{
+            display: grid;
+            height: 50%;
+            border: 2px solid black;
+            padding: 1%;
+            grid-template-columns: repeat(6,1fr);
+            row-gap: 7%;
+            column-gap:2% ;
+        }
+        .boxblack{
+            background-color: rgb(20, 19, 19);
+            border-radius: 4%;
+            color: white;
+        }
+        .boxgray{
+            background-color: gainsboro;
+            border-radius: 4%;
+            color: black ;
+        }
+        p{
+            font-size: xx-large;
+            margin-left: 5%;
+        }
+        .box1{
+            order: 2;
+        }
+        .box2{
+            order: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="items">
+        <div class="box1 boxblack"><p>1</p></div>
+        <div class="box2 boxgray"><p>2</p></div>
+        <div class="box3 boxblack"><p>3</p></div>
+        <div class="box4 boxgray"><p>4</p></div>
+        <div class="box5 boxblack"><p>5</p></div>
+        <div class="box6 boxgray"><p>6</p></div>
+        <div class="box7 boxblack"><p>7</p></div>
+        <div class="box8 boxgray"><p>8</p></div>
+        
+     </div>
+    
+</body>
+</html>
